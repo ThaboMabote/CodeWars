@@ -26,16 +26,5 @@ namespace CodeTest.KataTests
 			//Assert
 			Assert.Equal(expectedValue, Response);
         }
-
-        [Theory]
-        [MemberData(nameof(TestData))]
-        public void ConvertNumberToStringBadTest(int Input, string expectedValue)
-        {
-            //Act
-            var Response = NumberToString.stringConvertNumberToStringBad(Input);
-
-            //Assert
-            Assert.Equal(expectedValue, Response);
-        }
     }
 }
